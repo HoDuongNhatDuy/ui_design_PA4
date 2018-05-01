@@ -1,0 +1,18 @@
+#main-content {
+    margin: 20px auto;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 10px darkgray;
+    border-radius: 10px;
+}
+
+.my-button {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px darkgray;
+    border: 2px solid #F9C14B;
+    background: #F8A036;
+    font-weight: bold;
+}
+
+h3 {
+    color: #F8A036;
+}
