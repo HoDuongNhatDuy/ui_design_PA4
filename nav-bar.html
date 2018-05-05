@@ -1,6 +1,6 @@
 document.write(`
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><i class="fa fa-paw"></i><span class="text-danger"> Pet</span>haven</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light header-bar">
+    <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -18,16 +18,17 @@ document.write(`
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="inner-text-box form-control mr-sm-2" type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm...">
+            <input class="form-control inner-text-box  mr-sm-2" type="search" placeholder="Tìm kiếm..." aria-label="Tìm kiếm...">
+            <button class="search-icon"></button>
         </form>
-        <div id="avatar">
-            <img src="images/ava6.png"/>
+        <div id="avatar-frame">
+            <img class="image-fluid" src="images/doge.png"/>
         </div>
         <div id="user-area">
             <div>
                 Chào bạn, <span class="text-danger font-weight-bold">Shibe</span>
             </div>
-            <a href="#">Đăng xuất</a>
+            <a href="#"><small>Đăng xuất</small></a>
         </div>
     </div>
 </nav>
