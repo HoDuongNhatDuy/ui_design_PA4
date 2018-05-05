@@ -57,4 +57,45 @@ $( document ).ready(function() {
 		$(this).closest('tr').remove();
 	});
 
+
+	$('#price-find-owner').on('keypress',function(e){
+	    
+	      if(e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57))
+	      {
+	        return false;
+	      }
+	 });
+
+	$('#price-find-owner').on('keyup',function(){
+		var price = $('#price-find-owner').val();
+		if(price === '')return;
+		price = price.toString();
+		price = getMoney(price);
+
+		var price_fm = formatMoney(price);
+		$('#price-find-owner').val(price_fm);
+	});
+	$('#price-find-owner').on('blur',function(){
+		var price = $('#price-find-owner').val();
+		if(price === '')$('#price-find-owner').val('0');;
+	});
+	 function getMoney(fm_money){
+	    var fm = fm_money.replace(/\,/g,"");
+	    var money = parseInt(fm);
+	    return money;
+	 }
+	function formatMoney(money){
+	    var strmoney = money.toString();
+	
+	    var l = strmoney.length;
+	    var sodayphay = Math.ceil(l/3) - 1;
+	    for(var i = 1;i<= sodayphay; i++){
+	      strmoney = insert(strmoney,l-i*3,',');
+	    }
+	    return strmoney;
+	}
+	function insert(str, index, value) {
+	    return str.substr(0, index) + value + str.substr(index);
+	}
+
 })
