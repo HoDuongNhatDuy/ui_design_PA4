@@ -78,7 +78,7 @@ body {
 
 .list-group-item:hover {
     border: 1px solid #dbdbdb;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .category-selected {
@@ -259,4 +259,8 @@ h3 {
 .view-mode.active:hover {
     background: 0;
     border: 0;
+}
+
+.category-link:hover {
+    text-decoration: none !important;
 }
