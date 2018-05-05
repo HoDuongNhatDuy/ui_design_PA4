@@ -45,7 +45,7 @@ h3 .title-post{
     margin-top: 50px;
 }
 .div-choose-image-pet{
-    margin:10px 0px;
+    margin:20px 0px;
 }
 .div-choose-image-pet .add-image-pet,
 .div-choose-image-pet .image-pet{
@@ -126,3 +126,6 @@ a.lisence-text{
     color: #ff8533;
     border-bottom: 1px dotted #F8A036;
 }
+ .hide-element{
+    visibility: hidden;
+ }
