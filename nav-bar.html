@@ -7,14 +7,14 @@ document.write(`
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">TRANG CHỦ</a>
+            <li class="nav-item home">
+                <a class="nav-link" href="index.html">TRANG CHỦ</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">TÌM THÚ NUÔI</a>
+            <li class="nav-item find-pet">
+                <a class="nav-link" href="pets.html">TÌM THÚ NUÔI</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">TÌM CHỦ</a>
+            <li class="nav-item find-owner">
+                <a class="nav-link" href="find-owner-1.html">TÌM CHỦ</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -33,3 +33,5 @@ document.write(`
     </div>
 </nav>
 `);
+var currentPage = document.currentScript.getAttribute('current-page');
+$('.' + currentPage).addClass('active');
