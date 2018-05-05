@@ -12,7 +12,7 @@ how to use:
         <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
-                <h4 class="modal-title">Thêm tiêu chí lọc <span id="criteria-key"></span></h4>
+                <h4 class="modal-title">Thêm tiêu chí lọc <span id="selected-criteria-key"></span></h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <!-- Modal body -->
@@ -70,6 +70,7 @@ how to use:
 		    html += '<p class="criteria-item criteria-key" data-key="'+ index +'">'+ index +'</p>'
 	    }
 	    $('#criteria-modal .modal-body').html(html);
+	    $('#selected-criteria-key').html('');
     }
 
 	$('#criteria-modal').on('show.bs.modal', resetCriteriaModal);
@@ -90,7 +91,7 @@ how to use:
                 '</div>'
         }
 
-		$('#criteria-key').html(" > " + criteriaKey);
+		$('#selected-criteria-key').html(" > " + criteriaKey);
 		$('#criteria-modal .modal-body').html(html);
     });
 
