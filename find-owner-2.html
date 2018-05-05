@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm chủ cho pet - step 2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/bootstrap-4.1.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    <script src="nav-bar.html"></script>
+    <div id="main-content" class="container">
+        <h3 class="tille-post">Tìm chủ cho thú nuôi</h3>
+        <a href="find-owner-1.html">test find-owner-1.html</a>
+        <a href="find-owner-2.html">test find-owner-2.html</a>
+        <a href="find-owner-3.html">test find-owner-3.html</a>
+        <div class="content-post">
+            <form action="">
+                <lable>Hình ảnh của thú cưng*:</label><i class="fas fa-question-circle"></i>
+                <div class="div-choose-image-pet">
+                    <div class="image-pet">
+                        <img src="images/dog1.jpg" alt="no image" class="set-image">
+                    </div>
+                    <div class="image-pet">
+                        <img src="images/dog2.jpg" alt="no image" class="set-image">
+                    </div>
+                    <div class="image-pet">
+                        <img src="images/dog3.jpg" alt="no image" class="set-image">
+                    </div>
+                    <div class="image-pet">
+                        <img src="images/dog4.jpg" alt="no image" class="set-image">
+                    </div>
+          
+                    <a class="add-image-pet" href="javascript:;" role="file"><i class="fas fa-plus"></i></a>
+                    <input type="file" name="choose-image" multiple id="upload-file-pet" style="display: none;">
+                </div>
+                <small id="mute-imagepet" class="form-text text-muted"></small>
+                <div class="form-group">
+                  <label for="">Giá (VNĐ) *:</label><i class="fas fa-question-circle"></i>
+                  <input type="text" class="form-control" id="price-find-owner" value="0">
+                </div>
+                <div class="div-submit-next-step">
+                    <a href="find-owner-2.html" role="button" class="submit-next-step">Tiếp theo</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <script src="footer.html"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="assets/bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

@@ -13,6 +13,119 @@
     font-weight: bold;
 }
 
-h3 {
+h3{
     color: #F8A036;
 }
+a{
+    text-decoration: none!important;
+}
+h3 .title-post{
+    color: #F8A036;
+}
+.content-post{
+    margin-top: 20px;
+}
+.text-muted{
+    color: red!important;
+}
+.submit-next-step{
+    padding: 6px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px darkgray;
+    border: 2px solid #F9C14B;
+    background: #F8A036;
+    font-weight: bold;
+    text-decoration: none!important;
+}
+.submit-next-step:hover{
+    background-color: red;
+}
+.div-submit-next-step{
+    text-align: right;
+    margin-top: 50px;
+}
+.div-choose-image-pet{
+    margin:20px 0px;
+}
+.div-choose-image-pet .add-image-pet,
+.div-choose-image-pet .image-pet{
+    margin: 5px 10px;
+    display: inline;
+    cursor: pointer;
+}
+.div-choose-image-pet .image-pet .set-image{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.div-choose-image-pet .add-image-pet{
+    border: 1px solid #cccccc;
+    padding: 38px 42px;
+    border-radius: 10px;
+}
+.fas{
+    margin:5px;
+}
+.fa-question-circle{
+    color: #b3b3b3;
+    font-size: 13px;
+    margin-left: 10px;
+    position: relative;
+}
+.fa-times:hover{
+    color: red;
+}
+#price-find-owner{
+    width: 20%;
+}
+.content-post .form-group{
+    margin-top: 1rem;
+}
+.fa-question-circle .tooltiptext{
+    visibility: hidden;
+    width: 200px;
+    color: #fff;
+    background-color: #8c8c8c;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+}
+.fa-question-circle:hover .tooltiptext{
+    visibility: visible;
+}
+.div-add-feature .table{
+    margin-top: 20px;
+}
+.div-add-feature .table tr{
+    border: 1px solid #dee2e6;
+}
+.div-button-add-feature{
+    margin-top: 30px;
+    text-align: center;
+}
+.div-button-add-feature .submit-add-feature{
+    border-radius: 20px;
+    padding: 5px 50px;
+    border: 1px solid #007bff;
+    background-color: #fff;
+    color: #007bff;
+}
+.div-button-add-feature .submit-add-feature:hover{
+    background-color: #007bff;
+    color: #fff;
+}
+.text-left-align{
+    float: left;
+}
+a.lisence-text{
+    color: #ff8533;
+    border-bottom: 1px dotted #F8A036;
+}
+ .hide-element{
+    visibility: hidden;
+ }
