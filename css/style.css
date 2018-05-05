@@ -126,6 +126,15 @@ a.lisence-text{
     color: #ff8533;
     border-bottom: 1px dotted #F8A036;
 }
- .hide-element{
+.hide-element{
     visibility: hidden;
- }
+}
+
+.criteria-item {
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.criteria-item.tag-criteria {
+    display: inline;
+}

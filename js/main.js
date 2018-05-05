@@ -9,16 +9,19 @@ $( document ).ready(function() {
 
      });
 
-    $('.submit-add-feature').on('click',function(){
-    	var tr=
-    			`
-					<tr>
-	                    <td>Tuổi thú cưng: 8 tháng</td>
-	                    <td width="4%"><i class="fas fa-times remove-feature"></i></td>
-	                </tr>
-    			`;
-    	$('.list-feature-pet').append(tr);
-    });
+    // $('.submit-add-feature').on('click',function(){
+    // 	var tr=
+    // 			`
+		// 			<tr>
+	 //                    <td>Tuổi thú cưng: 8 tháng</td>
+	 //                    <td width="4%"><i class="fas fa-times remove-feature"></i></td>
+	 //                </tr>
+    // 			`;
+    // 	$('.list-feature-pet').append(tr);
+    // });
+	$('.add-criteria-btn').click(function() {
+		$('#criteria-modal').modal();
+	});
 
     $('a.submit-next-step').on('click',function(){
 
