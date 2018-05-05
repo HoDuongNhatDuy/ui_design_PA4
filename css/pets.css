@@ -19,7 +19,13 @@ body {
 }
 
 .top-bar {
+    display: flex;
     vertical-align: middle;
+    align-items: center;
+}
+
+.top-bar-right {
+    text-align: right;
 }
 
 .section-title {
@@ -48,6 +54,7 @@ body {
 .help-text {
     display: inline-block;
     margin-right: 20px;
+    color: #a3a3a3;
 }
 
 .new-post-button {
