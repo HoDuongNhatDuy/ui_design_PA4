@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-content {
+    width: 100%;
+    margin: 30px 20px 30px 20px;
+    padding: 20px 20px;
+    box-shadow: 0px 0px 10px darkgray;
+    border-radius: 10px;
+}
+
+.my-button {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px darkgray;
+    border: 2px solid #F9C14B;
+    background: #F8A036;
+    font-weight: bold;
+}
+
+.top-bar {
+    vertical-align: middle;
+}
+
+.section-title {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+    color: #f7941d; 
+}
+
+.separator {
+    color: #e5e5e5;
+}
+
+.list-group {
+    border: 0;
+}
+
+.list-group-item {
+    border: 0;
+}
+
+.side-menu {
+    border-right: 1px solid #e5e5e5;
+}
+
+.help-text {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.new-post-button {
+    display: inline-block;
+    border-radius: 60px;
+    box-shadow: 0px 0px 10px darkgray;
+    border: 2px solid #F9C14B;
+    background: #F8A036;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.filter-pill {
+    display: inline-block;
+    border: 0;
+    background: 0;
+    border-radius: 60px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.button-pill {
+    display: inline-block;
+    border-radius: 60px;
+    border: 1px solid #dbdbdb;
+    background: 0;
+    color: #737373;
+    margin-right: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+h3 {
+    color: #F8A036;
+}
