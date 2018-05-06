@@ -19,17 +19,24 @@ $( document ).ready(function() {
 			if($('.add-image-pet').hasClass('none-image-choose'))
 				$('.add-image-pet').removeClass('none-image-choose');
             //var filename = $('#upload-file-pet').val().split('\\').pop();
-            var filename = $('input[type=file]').val().replace(/C:\\fakepath\\/i, '');
-            var path = 'images/'+filename;
-            var divimg = `
+	        var file = document.getElementById('upload-file-pet').files[0];
+	        var reader  = new FileReader();
+	        // it's onload event and you forgot (parameters)
+	        reader.onload = function(e)  {
+		        var path = e.target.result;
+		        var divimg = `
 							<div class="image-pet">
 		                        <img src="`+ path +`" alt="no image" class="set-image">
 		                        <i class="fas fa-times remove-image-pet"></i>
 		                    </div>
             			`;
 
-            $('.div-choose-image-pet').append(divimg);
-            checkimage();
+		        $('.div-choose-image-pet').append(divimg);
+		        checkimage();
+	        }
+	        // you have to declare the file loading
+	        reader.readAsDataURL(file);
+
             //alert(count_img);
         });
     $('.add-image-pet').on('click',function(){
