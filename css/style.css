@@ -1,8 +1,17 @@
+body {
+    font-family: 'Roboto', sans-serif !important;
+    background-color: white;
+    background: url("../images/background.png") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 #main-content {
-    margin: 20px auto;
-    padding: 20px 20px;
-    box-shadow: 0px 0px 10px darkgray;
+    margin: 135px 35px 83px 35px;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 13.44px 2.56px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
+    background: white;
 }
 
 .my-button {
@@ -19,8 +28,10 @@ h3{
 a{
     text-decoration: none!important;
 }
-h3 .title-post{
+.main-title {
+    font-weight: 500;
     color: #F8A036;
+    font-size: 1.5em;
 }
 .content-post{
     margin-top: 20px;
@@ -170,6 +181,68 @@ a.lisence-text{
 
 .criteria-item.tag-criteria {
     display: inline;
+}
+
+.primary-button {
+    display: inline-block;
+    border-radius: 60px;
+    border: 1px solid #fbca51;
+    color: #55350d;
+    background: #F8A036;
+    background-image: linear-gradient( -10deg, rgba(0, 0, 0, 0.04) 50%, rgba(255, 255, 255, 0.04) 50%, rgba(173, 173, 173, 0.04) 100%);
+    font-weight: bold;
+    padding: 8px 40px 8px 40px;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    transition: all 0.3s !important;
+}
+
+.primary-button:hover {
+    color: #55350d;
+    background: #ffaa44;
+    background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.04) 50%, rgba(255, 255, 255, 0.04) 50%, rgba(173, 173, 173, 0.04) 100%);
+}
+
+.primary-button:active {
+    background-image: 0;
+    background: #F8A036;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    color: #7e5120;
+    outline: none;
+}
+
+.pethaven-help-symbol {
+    color: #737373;
+}
+
+.pethaven-label {
+    font-weight: 400;
+    color: #737373;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.pethaven-textbox {
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb(0, 0, 0) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    opacity: 0.14 !important;
+    box-shadow: inset 0.5px 1px 6px 1px rgba(0, 0, 0, 0.8) !important;
+}
+
+.pethaven-textarea {
+    padding: 10px 30px 10px 30px;
+    border-radius: 12px;
+    border-style: solid !important;
+    border-width: 1px !important;
+    border-color: rgb(0, 0, 0) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    opacity: 0.14 !important;
+    box-shadow: inset 0.5px 1px 6px 1px rgba(0, 0, 0, 0.8) !important;
 }
 .margin-top-30{
     margin-top: 30px !important;
