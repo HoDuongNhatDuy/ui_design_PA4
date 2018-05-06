@@ -25,7 +25,7 @@ nav.navbar.navbar-light .navbar-brand {
 }
 
 #navbarSupportedContent {
-    margin-left: 4em;
+    margin-left: 0px;
 }
 
 #navbarSupportedContent ul.navbar-nav li.nav-item {
@@ -63,7 +63,7 @@ nav.navbar.navbar-light .navbar-brand {
 }
 
 .inner-text-box {
-    min-width: 325px;
+    min-width: 275px;
     outline: none;
     border: 1px;
     background-color: rgba(0, 0, 0, 0.1);
