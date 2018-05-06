@@ -270,3 +270,12 @@ h3 {
 .category-link:hover {
     text-decoration: none !important;
 }
+
+.criteria-item {
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.criteria-item.tag-criteria {
+    display: inline;
+}
