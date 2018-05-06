@@ -2,6 +2,9 @@
     height: 48px;
     background: url("../images/footer_bg.png") repeat-x;
     vertical-align: middle;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer-row {
