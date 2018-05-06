@@ -20,31 +20,35 @@
         <a href="find-owner-3.html">test find-owner-3.html</a>
         <div class="content-post">
             <form action="">
-                <lable>Hình ảnh của thú cưng*:</label><i class="fas fa-question-circle"></i>
+                <div class="title-image">
+                    <lable>Hình ảnh của thú cưng*:</label>
+                    <i class="fas fa-question-circle">
+                        <span class="tooltiptext">Hình ảnh phải có kích thước tối thiêu là 150px x 150px, nhỏ hơn sẽ bị mờ đấy</span>
+                    </i>
+                </div>
                 <div class="div-choose-image-pet">
                     <div class="image-pet">
                         <img src="images/dog1.jpg" alt="no image" class="set-image">
+                        <i class="fas fa-times remove-image-pet"></i>
                     </div>
                     <div class="image-pet">
-                        <img src="images/dog2.jpg" alt="no image" class="set-image">
+                        <img src="images/dog1.jpg" alt="no image" class="set-image">
+                        <i class="fas fa-times remove-image-pet"></i>
                     </div>
-                    <div class="image-pet">
-                        <img src="images/dog3.jpg" alt="no image" class="set-image">
-                    </div>
-                    <div class="image-pet">
-                        <img src="images/dog4.jpg" alt="no image" class="set-image">
-                    </div>
-          
-                    <a class="add-image-pet" href="javascript:;" role="file"><i class="fas fa-plus"></i></a>
-                    <input type="file" name="choose-image" multiple id="upload-file-pet" style="display: none;">
                 </div>
+
+                <a class="add-image-pet" href="javascript:;" role="file"><i class="fas fa-plus size-30"></i></a>
+                <input type="file" name="choose-image" multiple id="upload-file-pet" accept="image/*" style="display: none;">
                 <small id="mute-imagepet" class="form-text text-muted"></small>
-                <div class="form-group">
-                  <label for="">Giá (VNĐ) *:</label><i class="fas fa-question-circle"></i>
-                  <input type="text" class="form-control" id="price-find-owner" value="0">
+                <div class="form-group margin-top-30">
+                    <label for="">Giá (VNĐ) *:</label>
+                    <i class="fas fa-question-circle">
+                        <span class="tooltiptext">Giá hợp lý thì sẽ có người quan tâm nhiều hơn, tốt nhất là 0 đồng</span>
+                    </i>
+                    <input type="text" class="form-control" id="price-find-owner" value="0">
                 </div>
                 <div class="div-submit-next-step">
-                    <a href="find-owner-3.html" role="button" class="submit-next-step offset-10">Tiếp theo</a>
+                    <a href="javascript:;" role="button" class="submit-next-step step-submit-2 offset-10">Tiếp theo</a>
                 </div>
             </form>
         </div>
