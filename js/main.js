@@ -1,8 +1,21 @@
 $( document ).ready(function() {
-     $('#upload-file-pet').on('change',function ()
+     $('#upload-file-pet').on('change',function (event)
         {
-            var filePath = $(this).val();
-            alert(filePath);
+			if($('.add-image-pet').hasClass('none-image-choose'))
+				$('.add-image-pet').removeClass('none-image-choose');
+            //var filename = $('#upload-file-pet').val().split('\\').pop();
+            var filename = $('input[type=file]').val().replace(/C:\\fakepath\\/i, '');
+            var path = 'images/'+filename;
+            var divimg = `
+							<div class="image-pet">
+		                        <img src="`+ path +`" alt="no image" class="set-image">
+		                        <i class="fas fa-times remove-image-pet"></i>
+		                    </div>
+            			`;
+
+            $('.div-choose-image-pet').append(divimg);
+            checkimage();
+            //alert(count_img);
         });
     $('.add-image-pet').on('click',function(){
     	$('#upload-file-pet').trigger('click');
@@ -23,12 +36,15 @@ $( document ).ready(function() {
 		$('#criteria-modal').modal();
 	});
 
-    $('a.submit-next-step').on('click',function(){
-
+    $('a.step-submit-1').on('click',function(){
     	var check1 = checknamepost();
     	var check2 = checknamepet();
-
+    	console.log('aaaa');
     	if(check1 !== '' && check2 !== '') window.location.href = 'find-owner-2.html';
+    });
+	$('a.step-submit-2').on('click',function(){
+		var checkimg = checkimage();
+		if(checkimg !== 0) window.location.href = 'find-owner-3.html';
     });
 
 	$('.namepost #text-namepost').on('blur',function(){
@@ -37,14 +53,20 @@ $( document ).ready(function() {
 	$('.namepet #text-namepet').on('blur',function(){
 		checknamepet();
 	});
+	function checkimage(){
+		var countimg = $('.div-choose-image-pet .image-pet').length;
+		if(countimg === 0){
+			$('#mute-imagepet').text('Phải có ít nhất 1 hình ảnh');
+		}
+		else $('#mute-imagepet').text('');
 
-
+		return countimg;
+	}
 	function checknamepost(){
 		var thongbao='';
     	var tenpost = $('.namepost #text-namepost').val();
     	if(tenpost === '' ) thongbao = 'Tên bài đăng không được trống';
     	$('.namepost #mute-namepost').text(thongbao);
-
     	return tenpost;
 	}
 	function checknamepet(){
@@ -52,15 +74,25 @@ $( document ).ready(function() {
     	var tenpet = $('.namepet #text-namepet').val();
     	if(tenpet === '' ) thongbao = 'Tên thú cưng không được trống';
     	$('.namepet #mute-namepet').text(thongbao);
-
     	return tenpet;
 	}
 
 	$('.list-feature-pet').on('click', '.remove-feature', function(){
 		$(this).closest('tr').remove();
 	});
-
-
+	$('.div-choose-image-pet').on('click', '.remove-image-pet', function(){
+		$(this).closest('div').remove();
+		addclassnoneimage();
+	});
+	function addclassnoneimage(){
+		if($('.div-choose-image-pet .image-pet').length === 0){
+			if(!$('.add-image-pet').hasClass('none-image-choose'))
+				$('.add-image-pet').addClass('none-image-choose');
+		}else{
+			if($('.add-image-pet').hasClass('none-image-choose'))
+				$('.add-image-pet').removeClass('none-image-choose');
+		}
+	}
 	$('#price-find-owner').on('keypress',function(e){
 	    
 	      if(e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57))
@@ -100,5 +132,6 @@ $( document ).ready(function() {
 	function insert(str, index, value) {
 	    return str.substr(0, index) + value + str.substr(index);
 	}
+
 
 })

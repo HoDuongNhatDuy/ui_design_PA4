@@ -98,8 +98,8 @@ nav.navbar.navbar-light .navbar-brand {
 }
 
 #avatar-frame {
-    margin-left: 4em;
-    width: 4em;
+    margin-left: 1em;
+    width: 4.5em;
     height: 4em;
     padding: 5px;
     background-image: url("../images/profile-frame.png");
