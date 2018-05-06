@@ -10,7 +10,17 @@ document.write(`
         </div>
         <div class="col-md-2"></div>
         <div class="col-md-4 right-block">
-            <a class="nav-link js-scroll-trigger footer-link" href="">Ngôn ngữ</a>
+            <div class="dropdown ">
+                <button class="btn dropdown-toggle nav-link footer-link languge-selector" type="button " data-toggle="dropdown
+                        " aria-haspopup="true " aria-expanded="false ">
+                        <img class="img-fluid" src="images/vn_flag.png">
+                    Tiếng Việt&nbsp;
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item " href="# ">Tiếng Việt</a>
+                    <a class="dropdown-item " href="# ">English</a>
+                </div>
+            </div>
         </div>
 </footer>
 `);

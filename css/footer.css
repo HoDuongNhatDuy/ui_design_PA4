@@ -34,6 +34,7 @@
 
 .footer-link {
     display: inline-block;
+    background: 0;
     color: #727272;
     font-size: 0.8em;
     margin-top: auto;
@@ -46,4 +47,8 @@
 .footer-link:hover {
     color: #f7941d;
     background: #545557;
+}
+
+.languge-selector {
+    margin-right: 50px;
 }
