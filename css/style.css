@@ -52,6 +52,7 @@ a {
     background: #F8A036;
     font-weight: bold;
     text-decoration: none!important;*/
+    margin-left: 10px;
     color: #000;
     display: inline-block;
     border-radius: 60px;
@@ -74,6 +75,7 @@ a {
 
 .div-submit-next-step {
     margin-top: 50px;
+    text-align: right;
 }
 
 .div-choose-image-pet {
@@ -195,6 +197,11 @@ a {
 .text-left-align {
     float: left;
 }
+.accept-license{
+    padding-top: 15px;
+    float: left;
+}
+a.lisence-text{
 
 a.lisence-text {
     color: #ff8533;
