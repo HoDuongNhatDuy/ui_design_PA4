@@ -36,7 +36,7 @@ $( document ).ready(function() {
     	$('#upload-file-pet').trigger('click');
 
      });
-	$('.add-criteria-btn').click(function() {
+	$('.add-criterion').click(function() {
 		$('#criteria-modal').modal();
 	});
 

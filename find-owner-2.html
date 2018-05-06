@@ -22,35 +22,39 @@
         <div class="content-post">
             <form action="">
                 <div class="title-image">
-                    <lable>Hình ảnh của thú cưng*:</label>
+                    <lable class="pethaven-label">Hình ảnh của thú nuôi<span class="required"><sup>*</sup></span>:</label>
                     <i class="fas fa-question-circle">
-                        <span class="tooltiptext">Hình ảnh phải có kích thước tối thiêu là 150px x 150px, nhỏ hơn sẽ bị mờ đấy</span>
+                        <span class="tooltiptext">Hình ảnh phải có kích thước tối thiểu là 150px x 150px</span>
                     </i>
                 </div>
                 <div class="div-choose-image-pet">
                     <div class="image-pet">
                         <img src="images/dog1.jpg" alt="no image" class="set-image">
-                        <i class="fas fa-times remove-image-pet"></i>
+                        <div class="remove-image-pet"></div>
                     </div>
                     <div class="image-pet">
-                        <img src="images/dog1.jpg" alt="no image" class="set-image">
-                        <i class="fas fa-times remove-image-pet"></i>
+                        <img src="images/dog4.jpg" alt="no image" class="set-image">
+                        <div class="remove-image-pet"></div>
+                    </div>
+                    <div class="image-pet">
+                        <img src="images/dog3.jpg" alt="no image" class="set-image">
+                        <div class="remove-image-pet"></div>
                     </div>
                 </div>
 
-                <a class="add-image-pet" href="javascript:;" role="file"><i class="fas fa-plus size-30"></i></a>
+                <a class="btn add-image-pet" href="javascript:;" role="file"><i class="fas fa-plus size-30"></i></a>
                 <input type="file" name="choose-image" multiple id="upload-file-pet" accept="image/*" style="display: none;">
                 <small id="mute-imagepet" class="form-text text-muted"></small>
                 <div class="form-group margin-top-30">
-                    <label for="">Giá (VNĐ) *:</label>
+                    <label class="pethaven-label" for="">Giá (VNĐ) <span class="required"><sup>*</sup></span>:</label>
                     <i class="fas fa-question-circle">
                         <span class="tooltiptext">Giá hợp lý thì sẽ có người quan tâm nhiều hơn, tốt nhất là 0 đồng</span>
                     </i>
-                    <input type="text" class="form-control" id="price-find-owner" value="0">
+                    <input type="text" class="form-control pethaven-textbox" id="price-find-owner" value="0">
                 </div>
                 <div class="div-submit-next-step">
-                    <a href="javascript:;" role="button" class="submit-next-step re-step-submit-2">Quay lại</a>
-                    <a href="javascript:;" role="button" class="submit-next-step step-submit-2">Tiếp theo</a>
+                    <a href="javascript:;" role="button" class="secondary-button re-step-submit-2">Quay lại</a>
+                    <a href="javascript:;" role="button" class="primary-button step-submit-2">Tiếp theo</a>
                 </div>
             </form>
         </div>
