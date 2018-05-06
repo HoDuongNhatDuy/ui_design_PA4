@@ -1,4 +1,19 @@
-$( document ).ready(function() {
+
+
+$( document ).ready(function() { 
+
+	// var titlepost='';
+
+	// var d = new Date();
+	// var month = d.getMonth()+1;
+	// var day = d.getDate();
+	// var datepost = ((''+day).length<2 ? '0' : '') + day + '/' + ((''+month).length<2 ? '0' : '') + month + '/' + d.getFullYear();
+
+	// var viewpost = 2;
+	// var commentpost = 1;
+
+	// var pricepost=0;
+
      $('#upload-file-pet').on('change',function (event)
         {
 			if($('.add-image-pet').hasClass('none-image-choose'))
@@ -21,17 +36,6 @@ $( document ).ready(function() {
     	$('#upload-file-pet').trigger('click');
 
      });
-
-    // $('.submit-add-feature').on('click',function(){
-    // 	var tr=
-    // 			`
-		// 			<tr>
-	 //                    <td>Tuổi thú cưng: 8 tháng</td>
-	 //                    <td width="4%"><i class="fas fa-times remove-feature"></i></td>
-	 //                </tr>
-    // 			`;
-    // 	$('.list-feature-pet').append(tr);
-    // });
 	$('.add-criteria-btn').click(function() {
 		$('#criteria-modal').modal();
 	});
@@ -40,11 +44,19 @@ $( document ).ready(function() {
     	var check1 = checknamepost();
     	var check2 = checknamepet();
     	console.log('aaaa');
-    	if(check1 !== '' && check2 !== '') window.location.href = 'find-owner-2.html';
+    	if(check1 !== '' && check2 !== '') {
+    		window.location.href = 'find-owner-2.html';
+    	}
     });
 	$('a.step-submit-2').on('click',function(){
 		var checkimg = checkimage();
-		if(checkimg !== 0) window.location.href = 'find-owner-3.html';
+		if(checkimg !== 0) {
+			window.location.href = 'find-owner-3.html';
+		}		
+    });
+    $('a.step-submit-3').on('click',function(){
+
+    	window.location.href = 'pets-find-owner.html';
     });
 
 	$('.namepost #text-namepost').on('blur',function(){
@@ -133,5 +145,12 @@ $( document ).ready(function() {
 	    return str.substr(0, index) + value + str.substr(index);
 	}
 
+	$('.find-owner-submit-new-post').on('click', function(){
+		window.location.href='find-owner-1.html';
+	});
+
+	$('.re-step-submit-2,.re-step-submit-3').on('click', function(){
+		window.history.back();
+	});
 
 })
