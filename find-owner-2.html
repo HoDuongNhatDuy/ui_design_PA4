@@ -7,50 +7,61 @@
     <link rel="stylesheet" href="assets/bootstrap-4.1.0-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/web-fonts-with-css/css/fontawesome-all.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 
-</head> 
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
 <body>
     <script src="nav-bar.html"></script>
-    <div id="main-content" class="container">
+    <div id="main-content">
         <h3 class="tille-post">Tìm chủ cho thú nuôi</h3>
-        <a href="find-owner-1.html">test find-owner-1.html</a>
+       <!--  <a href="find-owner-1.html">test find-owner-1.html</a>
         <a href="find-owner-2.html">test find-owner-2.html</a>
-        <a href="find-owner-3.html">test find-owner-3.html</a>
+        <a href="find-owner-3.html">test find-owner-3.html</a> -->
         <div class="content-post">
             <form action="">
-                <lable>Hình ảnh của thú cưng*:</label><i class="fas fa-question-circle"></i>
+                <div class="title-image">
+                    <lable class="pethaven-label">Hình ảnh của thú nuôi<span class="required"><sup>*</sup></span>:</label>
+                    <i class="fas fa-question-circle">
+                        <span class="tooltiptext">Hình ảnh phải có kích thước tối thiểu là 150px x 150px</span>
+                    </i>
+                </div>
                 <div class="div-choose-image-pet">
                     <div class="image-pet">
                         <img src="images/dog1.jpg" alt="no image" class="set-image">
-                    </div>
-                    <div class="image-pet">
-                        <img src="images/dog2.jpg" alt="no image" class="set-image">
-                    </div>
-                    <div class="image-pet">
-                        <img src="images/dog3.jpg" alt="no image" class="set-image">
+                        <div class="remove-image-pet"></div>
                     </div>
                     <div class="image-pet">
                         <img src="images/dog4.jpg" alt="no image" class="set-image">
+                        <div class="remove-image-pet"></div>
                     </div>
-          
-                    <a class="add-image-pet" href="javascript:;" role="file"><i class="fas fa-plus"></i></a>
-                    <input type="file" name="choose-image" multiple id="upload-file-pet" style="display: none;">
+                    <div class="image-pet">
+                        <img src="images/dog3.jpg" alt="no image" class="set-image">
+                        <div class="remove-image-pet"></div>
+                    </div>
                 </div>
+
+                <a class="btn add-image-pet" href="javascript:;" role="file"><i class="fas fa-plus size-30"></i></a>
+                <input type="file" name="choose-image" multiple id="upload-file-pet" accept="image/*" style="display: none;">
                 <small id="mute-imagepet" class="form-text text-muted"></small>
-                <div class="form-group">
-                  <label for="">Giá (VNĐ) *:</label><i class="fas fa-question-circle"></i>
-                  <input type="text" class="form-control" id="price-find-owner" value="0">
+                <div class="form-group margin-top-30">
+                    <label class="pethaven-label" for="">Giá (VNĐ) <span class="required"><sup>*</sup></span>:</label>
+                    <i class="fas fa-question-circle">
+                        <span class="tooltiptext">Giá hợp lý thì sẽ có người quan tâm nhiều hơn, tốt nhất là 0 đồng</span>
+                    </i>
+                    <input type="text" class="form-control pethaven-textbox" id="price-find-owner" value="0">
                 </div>
                 <div class="div-submit-next-step">
-                    <a href="find-owner-3.html" role="button" class="submit-next-step">Tiếp theo</a>
+                    <a href="javascript:;" role="button" class="secondary-button re-step-submit-2">Quay lại</a>
+                    <a href="javascript:;" role="button" class="primary-button step-submit-2">Tiếp theo</a>
                 </div>
             </form>
         </div>
     </div>
     <div class="clearfix"></div>
     <script src="footer.html"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="assets/bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>

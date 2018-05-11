@@ -1,9 +1,26 @@
 document.write(`
 <footer class="footer">
-    <div class="container center">
-        <div class="row justify-content-center">
-            <a class="nav-link js-scroll-trigger" href="">COMPANY &copy; 2018</a>
+    <div class="row footer-row align-items-center">
+        <div class="col-md-6 left-block">
+            <p class="footer-text">&copy; 2018 Pethaven</p>
+            <a class="nav-link js-scroll-trigger footer-link" href="">Điều khoản sử dụng</a>
+            <a class="nav-link js-scroll-trigger footer-link" href="">Giới thiệu</a>
+            <a class="nav-link js-scroll-trigger footer-link" href="">Trợ giúp</a>
+            <a class="nav-link js-scroll-trigger footer-link" href="">Liên hệ</a>
         </div>
-    </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4 right-block">
+            <div class="dropdown ">
+                <button class="btn dropdown-toggle nav-link footer-link languge-selector" type="button " data-toggle="dropdown
+                        " aria-haspopup="true " aria-expanded="false ">
+                        <img class="img-fluid" src="images/vn_flag.png">
+                    Tiếng Việt&nbsp;
+                </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item " href="# ">Tiếng Việt</a>
+                    <a class="dropdown-item " href="# ">English</a>
+                </div>
+            </div>
+        </div>
 </footer>
 `);

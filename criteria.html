@@ -1,0 +1,113 @@
+document.write(`
+<!--
+how to use:
+1. Popup this modal
+	$('#criteria-modal').modal();
+2. Listen to select criteria model event
+    $('body').on('add_new_criteria', function(event, key, value) {});
+3. Done
+-->
+<div class="modal fade" id="criteria-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Thêm tiêu chí lọc <span id="selected-criteria-key"></span></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+
+            </div>
+            <!-- Modal footer -->
+            <!--<div class="modal-footer">-->
+                <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+            <!--</div>-->
+        </div>
+    </div>
+</div>
+
+<script>
+	var criteria = {
+		'Kiểu lông': [
+			'Kiểu 1',
+			'Kiểu 2'
+		],
+		'Màu lông': [
+			'Đỏ',
+			'Cam',
+			'Vàng',
+			'Lục',
+			'Lam',
+			'Chàm',
+			'Tím'
+		],
+		'Tuổi': [
+			'Sơ sinh',
+			'3 tháng',
+			'6 tháng',
+			'1 tuổi',
+			'2 tuổi',
+			'3 tuổi',
+			'5 tuổi'
+		],
+		'Giới tính': [
+			'Đực/Trống',
+			'Cái/Mái',
+			'Khác'
+		],
+		'Tag': [
+			'Tag 1',
+			'Tag 2'
+		]
+	};
+
+    var criteriaKey = -1;
+    function resetCriteriaModal() {
+	    criteriaKey = -1;
+	    var html = '';
+	    for (var index in criteria) {
+		    html += '<p class="criteria-item criteria-key" data-key="'+ index +'">'+ index +'</p>'
+	    }
+	    $('#criteria-modal .modal-body').html(html);
+	    $('#selected-criteria-key').html('');
+    }
+
+	$('#criteria-modal').on('show.bs.modal', resetCriteriaModal);
+
+	$('body').on('click', '#criteria-modal .criteria-key', function() {
+		criteriaKey = $(this).data('key');
+        var criteriaValues = criteria[criteriaKey];
+		var html = '';
+		for (var index in criteriaValues) {
+			var name = criteriaValues[index];
+			html += '<p class="criteria-item criteria-value">'+ name +'</p>'
+		}
+
+		if (criteriaKey === 'Tag') {
+			html += '<div class="tag-criteria-block">' +
+                '<input class="criteria-item tag-criteria col-sm-9 form-control"> ' +
+                '<button type="button" class="btn btn-success criteria-value"><i class="fas fa-plus"></i></button>' +
+                '</div>'
+        }
+
+		$('#selected-criteria-key').html(" > " + criteriaKey);
+		$('#criteria-modal .modal-body').html(html);
+    });
+
+	$('body').on('click', '#criteria-modal .criteria-value', function() {
+		var value = $(this).text();
+
+		var textBox = $(this).closest('.tag-criteria-block').find('input.tag-criteria');
+		console.log($(this).parent());
+		if (textBox.length) {
+            value = textBox.val();
+            criteria[criteriaKey].push(value);
+        }
+
+        $('body').trigger('add_new_criteria', [criteriaKey, value]);
+		$('#criteria-modal').modal('hide');
+	});
+
+</script>
+`);
