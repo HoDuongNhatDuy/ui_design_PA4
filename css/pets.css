@@ -281,3 +281,7 @@ h3 {
 .criteria-item.tag-criteria {
     display: inline;
 }
+
+.ph-select {
+    border-radius: 100px;
+}
