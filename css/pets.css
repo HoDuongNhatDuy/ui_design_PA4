@@ -292,7 +292,7 @@ h3 {
     font-size: 0.9em !important;
     cursor: pointer;
     transition: all 0.3s;
-    margin-right: 10px !important;
+    margin-right: 0px !important;
     background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
     -webkit-appearance: none;
     background-position-x: 244px;
@@ -308,5 +308,9 @@ h3 {
 .left-bar{
     margin-top: -15px;
     padding-top: 30px;
+}
+
+.card-img-selected {
+    border: 3px solid #f79722;
 }
 
