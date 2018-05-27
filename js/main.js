@@ -63,7 +63,7 @@ $( document ).ready(function() {
     });
     $('a.step-submit-3').on('click',function(){
 
-    	window.location.href = 'pets-find-owner.html';
+    	window.location.href = 'pets-detail.html';
     });
 
 	$('.namepost #text-namepost').on('blur',function(){
@@ -159,5 +159,8 @@ $( document ).ready(function() {
 	$('.re-step-submit-2,.re-step-submit-3').on('click', function(){
 		window.history.back();
 	});
+	$('.pet-thumbnail').on('click',function(){
 
+    	window.location.href = 'pets-detail.html';
+    });
 })
