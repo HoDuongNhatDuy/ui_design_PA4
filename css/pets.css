@@ -297,3 +297,16 @@ h3 {
     -webkit-appearance: none;
     background-position-x: 244px;
 }
+.right-bar{
+    margin-top: -15px;
+    padding-top: 30px;
+    padding-left: 30px;
+    height: 500px;
+   width: 300px;
+}
+ 
+.left-bar{
+    margin-top: -15px;
+    padding-top: 30px;
+}
+
