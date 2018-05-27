@@ -368,10 +368,13 @@ a.lisence-text {
     border-radius: 100px;
     border-style: solid !important;
     border-width: 1px !important;
-    border-color: rgb(0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.05) !important;
     background-color: rgba(255, 255, 255, 0) !important;
-    opacity: 0.14 !important;
-    box-shadow: inset 0.5px 1px 6px 1px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: inset 0.5px 1px 6px 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.form-control.pethaven-textbox {
+    color: #030303 !important;
 }
 
 .pethaven-textarea {
@@ -379,10 +382,9 @@ a.lisence-text {
     border-radius: 12px;
     border-style: solid !important;
     border-width: 1px !important;
-    border-color: rgb(0, 0, 0) !important;
+    border-color: rgba(0, 0, 0, 0.05) !important;
     background-color: rgba(255, 255, 255, 0) !important;
-    opacity: 0.14 !important;
-    box-shadow: inset 0.5px 1px 6px 1px rgba(0, 0, 0, 0.8) !important;
+    box-shadow: inset 0.5px 1px 6px 1px rgba(0, 0, 0, 0.2) !important;
 }
 
 .margin-top-30 {
