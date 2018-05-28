@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
 </head>
 
 <body>
@@ -18,12 +22,11 @@
     <div class="row main-content">
         <div class="col-4 right-bar col-override">
             <div class="row img-list">
-                <img class="card-img-main" src="images/dog6.jpg " alt="Hanzo">
             </div>
-            <div class="row img-list">
-                <img class="card-img-list card-img-selected" src="images/dog6.jpg" alt="Hanzo1">
-                <img class="card-img-list" src="images/dog4.jpg" alt="Hanzo2">
-                <img class="card-img-list" src="images/dog5.jpg" alt="Hanzo3">
+            <div class="row img-list fotorama" data-nav="thumbs" data-allowfullscreen="native" data-autoplay="1000" >
+                <img src="images/dog6.jpg" alt="Hanzo1">
+                <img src="images/dog4.jpg" alt="Hanzo2">
+                <img src="images/dog5.jpg" alt="Hanzo3">
             </div>
         </div>
         <div class="col-7 left-bar col-override">
