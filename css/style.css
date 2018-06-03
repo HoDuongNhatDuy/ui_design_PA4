@@ -463,6 +463,7 @@ a.lisence-text {
 
 .price-pill {
     background: #f7941d !important;
+    font-weight: 500 !important;
 }
 
 .details-row {

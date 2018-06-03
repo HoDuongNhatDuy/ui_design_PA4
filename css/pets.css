@@ -108,11 +108,14 @@ body {
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
     cursor: pointer;
     transition: all 0.3s !important;
+    color: black;
 }
 
 .new-post-button:hover {
     background: #ffaa44;
     background-image: linear-gradient( 0deg, rgba(0, 0, 0, 0.04) 50%, rgba(255, 255, 255, 0.04) 50%, rgba(173, 173, 173, 0.04) 100%);
+    color: #914f00;
+    text-decoration: none;
 }
 
 .new-post-button:active {
