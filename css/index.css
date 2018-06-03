@@ -12,3 +12,52 @@
     height: 40em;
     overflow-y: hidden;
 }
+
+.pethaven-carousel-img {
+    width: 100% !important;
+}
+
+.carousel {
+    height: 600px !important;
+}
+
+#slider {
+    width: 100% !important;
+}
+
+.carousel .item img {
+  width: 100% !important;
+  /*img width*/
+}
+
+.intro-box {
+    padding: 40px;
+}
+
+.intro-block {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #f7941d;
+}
+
+.section-text {
+    font-size: 0.97em;
+    color: #707070;
+}
+
+.section-link {
+    color: #9d9d9d;
+    font-size: 0.9em;
+    text-align: right;
+    text-decoration: underline !important;
+}
+
+.carousel-caption {
+    bottom: 500px;
+    text-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.6) !important;
+}
+
