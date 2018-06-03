@@ -10,7 +10,13 @@
     <link rel="stylesheet" href="css/pets.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" href="css/pet-detail.css"> <!-- 16 KB -->
+
     <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 </head>
 
 <body>
@@ -18,12 +24,11 @@
     <div class="row main-content">
         <div class="col-4 right-bar col-override">
             <div class="row img-list">
-                <img class="card-img-main" src="images/dog6.jpg " alt="Hanzo">
             </div>
-            <div class="row img-list">
-                <img class="card-img-list card-img-selected" src="images/dog6.jpg" alt="Hanzo1">
-                <img class="card-img-list" src="images/dog4.jpg" alt="Hanzo2">
-                <img class="card-img-list" src="images/dog5.jpg" alt="Hanzo3">
+            <div class="row img-list fotorama" data-nav="thumbs" data-allowfullscreen="native" data-autoplay="1000" >
+                <img src="images/dog6.jpg" alt="Hanzo1">
+                <img src="images/dog4.jpg" alt="Hanzo2">
+                <img src="images/dog5.jpg" alt="Hanzo3">
             </div>
         </div>
         <div class="col-7 left-bar col-override">
@@ -39,13 +44,14 @@
             </div>
             <div class="row details-row">
                 <p class="detail-title ">MÔ TẢ</p>
-                <p class="description">Là một giống chó cỡ trung thuộc nòi chó kéo xe có nguồn gốc từ vùng Đông Bắc Sibir, Nga. Xét theo đặc điểm
-                    di truyền, chó Husky được xếp vào dòng Spitz. Chó Husky có hai lớp lông dày, tai dựng hình tam giác và
-                    thường có những điểm nhận dạng khác nhau trên lông. Chó Husky là giống chó rất ưa thích vận động do tổ
-                    tiên của chúng sống ở một trong những nơi lạnh giá nhất như Siberia, ở đây chó Husky nguyên thủy được
-                    phối giống bởi người Chukchi ở Đông Bắc Á nhằm mục đích kéo xe hàng trên một quãng đường dài trong điều
-                    kiện lạnh giá khắc nghiệt. Giống chó này được đưa tới Alaska trong thời kì khai thác vàng ở Nome rồi
-                    sau đó trở nên phổ biến ở Hoa Kỳ và Canada.</p>
+                <p class="description">
+                    Là một giống chó cỡ trung thuộc nòi chó kéo xe có nguồn gốc từ vùng Đông Bắc Sibir, Nga. <br>
+                    Xét theo đặc điểm di truyền, chó Husky được xếp vào dòng Spitz. <br>
+                    Chó Husky có hai lớp lông dày, tai dựng hình tam giác và thường có những điểm nhận dạng khác nhau trên lông. <br>
+                    Chó Husky là giống chó rất ưa thích vận động do tổ tiên của chúng sống ở một trong những nơi lạnh giá nhất như Siberia, ở đây chó Husky nguyên thủy được phối giống bởi người Chukchi ở Đông Bắc Á nhằm mục đích kéo xe hàng trên một quãng đường dài trong điều kiện lạnh giá khắc nghiệt. <br>
+                    Giống chó này được đưa tới Alaska trong thời kì khai thác vàng ở Nome rồi sau đó trở nên phổ biến ở Hoa Kỳ và Canada. <br>
+                    Ban đầu Husky được nuôi để làm chó kéo xe nhưng về sau chúng trở thành thú <br>
+                </p>
             </div>
             <div class="row details-row">
                 <p class="detail-title ">ĐẶC ĐIỂM</p>
@@ -66,6 +72,56 @@
             </div>
             <div class="row details-row">
                 <p class="detail-title ">BÌNH LUẬN</p>
+                <div id="comments">
+                    <div class="comment row">
+                        <div class="commenterAvatar col-sm-1">
+                            <img src="images/doge.png"/>
+                        </div>
+                        <div class="commentText col-sm-11">
+                            <div class="form-group">
+                                <textarea class="form-control comment-text-box" type="text" placeholder="Your comments"></textarea>
+                            </div>
+                            <button class="btn btn-default float-right" type="button">Add</button>
+                        </div>
+                    </div>
+
+                    <div class="comment row">
+                        <div class="commenterAvatar col-sm-1">
+                            <img src="images/ava1.png"/>
+                        </div>
+                        <div class="commentText col-sm-11">
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="date sub-text">on March 5th, 2014</div>
+                        </div>
+                    </div>
+                    <div class="comment row">
+                        <div class="commenterAvatar col-sm-1">
+                            <img src="images/ava2.png"/>
+                        </div>
+                        <div class="commentText col-sm-11">
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="date sub-text">on March 5th, 2014</div>
+                        </div>
+                    </div>
+                    <div class="comment row">
+                        <div class="commenterAvatar col-sm-1">
+                            <img src="images/ava3.png"/>
+                        </div>
+                        <div class="commentText col-sm-11">
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="date sub-text">on March 5th, 2014</div>
+                        </div>
+                    </div>
+                    <div class="comment row">
+                        <div class="commenterAvatar col-sm-1">
+                            <img src="images/ava4.png"/>
+                        </div>
+                        <div class="commentText col-sm-11">
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="date sub-text">on March 5th, 2014</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

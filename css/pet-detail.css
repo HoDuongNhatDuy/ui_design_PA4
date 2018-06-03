@@ -1,0 +1,19 @@
+.commenterAvatar img {
+    border-radius:50%;
+    width: 50px;
+    height: auto;
+}
+
+.commentText .sub-text {
+    text-align: right;
+    color:#aaa;
+    font-size: small;
+}
+
+#comments .comment {
+    margin-top: 2em;
+}
+
+#comments .comment-text-box {
+    width: 100%;
+}
