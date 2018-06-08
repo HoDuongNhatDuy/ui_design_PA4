@@ -402,7 +402,7 @@ a.lisence-text {
 }
 
 .img-list {
-    margin-left: 120px;
+    margin-left: 120    px;
     padding-top: 20px;
     width: 300px;
 }
@@ -473,4 +473,35 @@ a.lisence-text {
 .col-override {
     padding-left: 0px !important;
     margin-left: 0px !important;
+}
+
+.pet-category-group {
+    display: block;
+}
+
+.pethaven-radio-btn {
+    margin-right: -5px !important;
+    margin-left: 0px !important;
+    border-radius: 100px;
+    padding: 8px 20px;
+    color: #737373;
+    border: 1px solid #dbdbdb;
+    background: 0;
+}
+
+.pet-category-group > .pethaven-radio-btn.active {
+    background-color: #f4f4f4 !important;
+    box-shadow: 0.5px 0.866px 0px 0px rgba(255, 255, 255, 0.26), inset 0.5px 0.866px 4px 0px rgba(0, 0, 0, 0.2) !important;
+    color: black !important;
+    border: 1px solid #dbdbdb !important;
+}
+
+.pethaven-radio-btn:hover {
+    margin-right: -5px !important;
+    margin-left: 0px !important;
+    border-radius: 100px;
+    padding: 8px 20px;
+    color: white !important;
+    border: 1px solid #f7941d !important;
+    background: #f7941d !important;
 }
