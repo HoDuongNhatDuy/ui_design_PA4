@@ -67,7 +67,7 @@ nav.navbar.navbar-light .navbar-brand {
 }
 
 .inner-text-box {
-    min-width: 275px;
+    min-width: 325px;
     outline: none;
     border: 1px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -102,7 +102,7 @@ nav.navbar.navbar-light .navbar-brand {
 }
 
 #avatar-frame {
-    margin-left: 3em;
+    margin-left: 5em;
     width: 4em;
     height: 4em;
     padding: 5px;
