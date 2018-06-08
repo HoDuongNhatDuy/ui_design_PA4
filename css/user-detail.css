@@ -1,0 +1,96 @@
+.user-title {
+    margin-top: 20px;
+    font-weight: 700;
+    color: #494744;
+    font-size: 2em;
+    display: inline-block;
+}
+
+.user-overview-text {
+    font-size: 1.3em;
+    color: #a3a3a3;
+}
+
+.center-col {
+    text-align: center;
+    margin-right: -1px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.center-col-top {
+    padding-top: 30px;
+}
+
+.center-col-bottom {
+    padding-bottom: 30px;
+}
+
+.user-title-col {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.user-overview-row {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.right-col {
+    display: flex !important;
+    align-items: center !important;
+    float: right;
+}
+
+.user-avatar {
+    max-width: 256px !important;
+    max-height: 256px !important;
+    margin-right: 40px;
+    margin-top: 25px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+    border: 6px solid white;
+}
+
+.avatar-col {
+    text-align: right;
+}
+
+.filler {
+    height: 50px;
+}
+
+.user-post-switcher {
+    margin-top: 20px;
+}
+
+.edit-button {
+    border-radius: 100px;
+    padding: 8px 16px;
+    color: #737373;
+    border: 0;
+    background: 0;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.chat-button {
+    border: 1px solid #dbdbdb;
+    margin-top: 20px !important;
+}
+
+.chat-button:hover {
+    border: 1px solid #f79722;
+}
+
+.edit-button:hover {
+    background: #f79722;
+    color: white;
+}
+
+.edit-button.active {
+    color: #f79722;
+}

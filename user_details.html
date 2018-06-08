@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chi tiết người dùng</title>
+    <link rel="stylesheet" href="assets/bootstrap-4.1.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/web-fonts-with-css/css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pets.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" href="css/user-detail.css">
+    <!-- 16 KB -->
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+    <!-- 3 KB -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body>
+    <script src="nav-bar.html"></script>
+    <div class="main-content">
+        <div class="row details-row">
+            <div class="col-3 col-offset-1 avatar-col">
+                <img class="user-avatar float-right" src="images/doge.png">
+            </div>
+            <div class="col-7">
+                <div class="row details-row user-title-row">
+                    <div class="col-5 user-title-col">
+                        <p class="user-title">Shibe</p>
+                    </div>
+                    <div class="col-7 right-col justify-content-end">
+                        <button class="edit-button">
+                            <i class="fas fa-arrow-up"></i>
+                        </button>
+                        <button class="edit-button">
+                            <i class="fas fa-arrow-down"></i>
+                        </button>
+                        <button class="edit-button">
+                            <i class="far fa-flag"></i> Báo cáo vi phạm
+                        </button>
+                    </div>
+                </div>
+                <hr class="separator">
+                <div class="row user-overview-row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-2 user-overview-text center-col">
+                                <i class="fas fa-hands"></i>
+                            </div>
+                            <div class="col-2 user-overview-text center-col">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                            <div class="col-2 user-overview-text center-col">
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 user-overview-text center-col">
+                                5
+                            </div>
+                            <div class="col-2 user-overview-text center-col">
+                                12
+                            </div>
+                            <div class="col-2 user-overview-text center-col">
+                                264
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="separator">
+                <div class="filler"> </div>
+                <div class="row details-row">
+                    <div class="col-6">
+                        <div class="row details-row">
+                            <p class="detail-title">THÔNG TIN CHUNG</p>
+                        </div>
+                        <div class="row details-row">
+                            <div class="col-4 col-override">
+                                <label class="dd1">Họ và tên :</label>
+                                <label class="dd1">Giới tính :</label>
+                                <label class="dd1">Tuổi :</label>
+                                <label class="dd1">Địa chỉ :</label>
+                            </div>
+                            <div class="col-8 col-override">
+                                <p class="dd2">John Doe</p>
+                                <p class="dd2">Nam</p>
+                                <p class="dd2">24</p>
+                                <p class="dd2">TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row details-row">
+                            <p class="detail-title">LIÊN LẠC</p>
+                        </div>
+                        <div class="row details-row">
+                            <div class="col-4 col-override">
+                                <label class="dd1">Số điện thoại :</label>
+                                <label class="dd1">Địa chỉ email :</label>
+                            </div>
+                            <div class="col-8 col-override">
+                                <p class="dd2">0654 256 365</p>
+                                <p class="dd2">doedoe@mail.com</p>
+                            </div>
+                            <button class="edit-button chat-button">
+                                <i class="far fa-comments"></i> Chat trực tiếp
+                            </button>
+                            <button class="edit-button chat-button">
+                                <i class="far fa-envelope"></i> Gửi email
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filler"> </div>
+                <div class="row details-row">
+                    <div class="col-12">
+                        <p class="detail-title">BÀI ĐÃ ĐĂNG</p>
+                    </div>
+                </div>
+                <div class="row details-row">
+                    <div class="col-6">
+                        <div class="btn-group btn-group-toggle pet-category-group user-post-switcher" data-toggle="buttons">
+                            <label class="btn btn-primary pethaven-radio-btn active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked> Tìm chủ
+                            </label>
+                            <label class="btn btn-primary pethaven-radio-btn">
+                                <input type="radio" name="options" id="option2" autocomplete="off"> Tìm thú nuôi
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <script src="footer.html"></script>
+    <script src="assets/bootstrap-4.1.0-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
